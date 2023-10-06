@@ -32,14 +32,17 @@ const Hero = () => {
         <div className='absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[32px] h-[60px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            {/* the framer motion is used for creating the animation */}
             <motion.div
+            //the animate defines how the animation should behave and it is applied in the y (vertical) position
               animate={{
                 y: [0, 24, 0],
               }}
+              //the transition props specifies the transition properties of the animation
               transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
+                duration: 1.5,// sets the duration of each cycle of the animation
+                repeat: Infinity,// animation should repeat infinitely
+                repeatType: "loop",// animation should loop continuously
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />

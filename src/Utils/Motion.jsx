@@ -2,7 +2,7 @@ export const textVariant = (delay) => {
     return {
       hidden: {
         y: -50,
-        opacity: 0,
+        opacity: 0,//control the transparency of the elements 0 -> complete transparency 1-> not transparent
       },
       show: {
         y: 0,
@@ -17,6 +17,7 @@ export const textVariant = (delay) => {
   };
   
   export const fadeIn = (direction, type, delay, duration) => {
+    // direction, type, delay, duration arguments are used to configure the animation
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -31,6 +32,8 @@ export const textVariant = (delay) => {
           type: type,
           delay: delay,
           duration: duration,
+          // Ease defines how the animation as it moves from one state to another
+          // easeOut  It starts fast and then slow toward the end of the animation
           ease: "easeOut",
         },
       },

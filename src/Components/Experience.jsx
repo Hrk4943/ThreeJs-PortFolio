@@ -2,7 +2,7 @@ import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+} from "react-vertical-timeline-component";// used to create vertical timeline layout
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../Constants";
